@@ -11,6 +11,9 @@ export default function Signin(props) {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
+  /**
+   * Handle signin
+   */
   const signin = () => {
     Axios.post("http://192.168.1.100:5000/user/signin", {
       email,

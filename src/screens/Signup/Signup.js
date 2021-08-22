@@ -17,6 +17,9 @@ export default function Signup() {
     history.goBack();
   };
 
+  /**
+   * Handle Sign up
+   */
   const signup = () => {
     if (!name || !email || !password) {
       alert("Please type all the required fields");

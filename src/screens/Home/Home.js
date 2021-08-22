@@ -24,6 +24,9 @@ export default function Home() {
     getAllUsers();
   }, []);
 
+  /**
+   * Get all the users
+   */
   const getAllUsers = () => {
     Axios.get("http://192.168.1.106:5000/user/getAllUsers")
       .then((response) => {
@@ -34,6 +37,9 @@ export default function Home() {
       });
   };
 
+  /**
+   * Check that users are already in the array and if not add user to the array
+   */
   const handleSelectIndex = (user, index) => {
     const filteredSelectedIndex = selectedIndex.filter(
       (filteredIndex) => index !== filteredIndex
@@ -54,6 +60,9 @@ export default function Home() {
     }
   };
 
+  /**
+   * Handle selcting all the users
+   */
   const handleSelectAll = (users) => {
     const tempIndexArr = [];
     const tempUserArr = [];
@@ -68,6 +77,9 @@ export default function Home() {
     setSelectedUsers(tempUserArr);
   };
 
+  /**
+   * Check that users are already selected or not
+   */
   const handleChecked = (index) => {
     return selectedIndex.some((value) => index === value);
   };
