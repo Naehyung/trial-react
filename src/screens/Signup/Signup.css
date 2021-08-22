@@ -1,0 +1,51 @@
+.signupMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #002e27;
+}
+
+.signupMain #icon {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.signupMain h1 {
+  color: #fefddf;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.signupMain input {
+  width: 500px;
+  height: 40px;
+  font-size: 13px;
+  border-radius: 10px;
+  border-width: 0;
+  padding-left: 10px;
+}
+
+.signupMain input:focus {
+  outline: none
+}
+
+.signupMain p {
+  color: #fefddf;
+  padding-left: 8px;
+}
+
+.signupMain button {
+  width: 510px;
+  height: 50px;
+  margin-top: 50px;
+  font-size: 13px;
+  border-radius: 10px;
+  border-width: 0;
+  background-color: #fefddf;
+  font-size: 14px;
+  font-weight: bold;
+  color: #002e27;
+}
